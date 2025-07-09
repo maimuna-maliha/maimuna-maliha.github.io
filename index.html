@@ -1,36 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Maimuna Maliha's Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Maimuna Maliha | Cybersecurity Enthusiast</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Hi, I'm Mst. Maimuna Hossain Maliha — Aspiring Cybersecurity Pro</h1>
-    <p>Currently studying CSE at ULAB </p>
+  <header class="header">
+    <nav class="nav container">
+      <a href="#hero" class="logo">Mst. Maimuna Hossain Maliha</a>
+      <ul class="nav-list">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="Resume_Maimuna.pdf" class="nav-link">Download Resume</a></li>
+      </ul>
+      <button id="darkModeToggle" class="dark-toggle" aria-label="Toggle dark mode">
+        <i class="fas fa-moon"></i>
+      </button>
+    </nav>
   </header>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li>
-        <strong>Network Scanner (Python)</strong>: A tool to scan local networks.
-      </li>
-      <li>
-        <strong>Password Strength Checker</strong>: Web tool to check password security.
-      </li>
-      <li>
-        <strong>TryHackMe Write-up</strong>: Step-by-step CTF challenge solution.
-      </li>
-    </ul>
-  </section>
+  <main>
+    <!-- Hero -->
+    <section id="hero" class="hero container">
+      <div class="hero-left">
+        <img src="maimuna-photo.jpg" alt="Maimuna Maliha" class="hero-img" />
+      </div>
+      <div class="hero-right">
+        <h1 class="hero-title">Mst. Maimuna Hossain Maliha</h1>
+        <p class="hero-subtitle">CSE Undergraduate | Cybersecurity Enthusiast | Exploring Programming and System Security</p>
+        
+      </div>
+    </section>
 
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: your-email@example.com</p>
-    <p>GitHub: <a href="https://github.com/maimuna-maliha" target="_blank">github.com/maimuna-maliha</a></p>
-  </section>
+    <!-- About -->
+    <section id="about" class="about container">
+      <h2 class="section-title">About Me</h2>
+      <p class="about-text">Hi, I’m MST. Maimuna Hossain Maliha, an undergraduate student pursuing a Bachelor of Science in Computer Science and Engineering at the University of Liberal Arts Bangladesh (ULAB). I have a solid academic foundation in programming languages and, I am deeply passionate about the fields of Cybersecurity, Ethical Hacking, and Secure Software Design.</p>
+      <p class="about-text">Throughout my academic journey, I have developed and deployed full-featured web applications using modern technologies, placing particular emphasis on clean design, responsive user interfaces, and secure system architecture. </p>
+      <p class="about-text">I am eager to contribute to impactful, real-world projects where I can apply my technical expertise, collaborate with others, and grow as a responsible, ethical, and forward-thinking developer.</p>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <h3><a href="https://schedula-lovat.vercel.app/">Schedula - Smart Schedule Companion</a></h3>
+          <p>Built a full-featured web app using React, Firebase, and JavaScript to generate optimal class schedules. Includes course input form, dynamic scheduling algorithm, and options to save/view schedules.</p>
+        </article>
+        
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="education container">
+  <h2 class="section-title">Education</h2>
+  <div class="timeline">
+    
+    <div class="timeline-row">
+      <div class="timeline-left">
+        <h3>2023 - 2027</h3>
+        <span>Bachelor of Science</span>
+      </div>
+      <div class="timeline-right">
+        <h3>University of Liberal Arts Bangladesh</h3>
+        <span>Computer Science and Engineering</span>
+      </div>
+    </div>
+
+    <div class="timeline-row">
+      <div class="timeline-left">
+        <h3>2020 – 2022</h3>
+        <span>Higher Secondary Certificate</span>
+      </div>
+      <div class="timeline-right">
+        <h3>Birshreshtha Noor Mohammad Public College</h3>
+        <span>Science</span>
+      </div>
+    </div>
+
+    <div class="timeline-row">
+      <div class="timeline-left">
+        <h3>2018 – 2020</h3>
+        <span>Secondary School Certificate</span>
+      </div>
+      <div class="timeline-right">
+        <h3>Pacific Kindergarten and High School</h3>
+        <span>Science</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+    <!-- Contact -->
+    <section id="contact" class="contact container">
+      <h2 class="section-title">Get in Touch</h2>
+      <div class="contact-icons">
+        <a href="mailto:mst.maimuna.hossain.maliha@gmail.com" aria-label="Email" class="contact-link"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/maimuna-maliha" target="_blank" aria-label="GitHub" class="contact-link"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/mst-maimuna-hossain-maliha" target="_blank" aria-label="LinkedIn" class="contact-link"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Mst. Maimuna Hossain Maliha. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const toggleBtn = document.getElementById('darkModeToggle');
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      toggleBtn.querySelector('i').classList.toggle('fa-moon');
+      toggleBtn.querySelector('i').classList.toggle('fa-sun');
+    });
+  </script>
 </body>
 </html>
