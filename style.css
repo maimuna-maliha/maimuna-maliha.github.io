@@ -225,7 +225,7 @@ img {
 
 .project-card h3:hover::after,
 .project-card h3:focus::after {
-  width: 38.2%;
+  width: 100%;
 }
 
 /* ==== Education ==== */
